@@ -1,8 +1,8 @@
 <div class="centered">
   <main>
     <h1 class="title">8Queen</h1>
-    <GameArea {count} {judge} {field} on:updateChild={updateChild}></GameArea>
-    <span>Queenの数：{count}</span><button on:click={reset}>はじめから</button><br>
+    <Board {count} {judge} {field} on:updateChild={updateChild}></Board>
+    <span>Queenの数：{count}</span><button on:click={fromTheBeginning}>はじめから</button><br>
     <span>{judge}</span>
   </main>
 </div>
@@ -10,22 +10,24 @@
 
 <script lang="ts">
   import * as _util from 'smicle-util'
-  import GameArea from './components/GameArea.svelte'
+  import Board from './components/Board.svelte'
 
   let count = 0
   let judge = ''
   let field: number[] = _util.range(64).fill(0)
 
+  const resetBoard = () => _util.range(64).forEach(i => field[i] = 0)
+
+  const fromTheBeginning = () => {
+    count = 0
+    judge = ''
+    resetBoard()
+  }
+
   const updateChild = (e: any) => {
     count = e.detail.count
     judge = e.detail.judge
     field = e.detail.field
-  }
-
-  const reset = () => {
-    count = 0
-    judge = ''
-    _util.range(64).forEach(i => field[i] = 0)
   }
 </script>
 

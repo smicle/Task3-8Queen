@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);span.svelte-1bowyze{position:relative;left:-50%;z-index:-2}button.svelte-1bowyze{position:relative;z-index:1;margin-top:10px}.centered.svelte-1bowyze{min-width:500px;position:relative;overflow:hidden}.centered.svelte-1bowyze main.svelte-1bowyze{position:relative;left:50%;float:left}.title.svelte-1bowyze{position:relative;left:-14%}
-.trout.svelte-92vj7h{position:relative;width:50px;height:50px;border:solid 1px black;left:-50%;float:left}.trout[value='1'].svelte-92vj7h{background-color:#33d5ac}.trout[value='2'].svelte-92vj7h{background-color:#274079}
+.trout.svelte-q77wyd{position:relative;width:50px;height:50px;left:-50%;float:left;border:solid 1px black}.trout[number='25'].svelte-q77wyd{background-color:#33d5ac}.trout[number='23'].svelte-q77wyd{background-color:#274079}
+.trout.svelte-q77wyd{position:relative;width:50px;height:50px;left:-50%;float:left;border:solid 1px black}.trout[number='25'].svelte-q77wyd{background-color:#33d5ac}.trout[number='23'].svelte-q77wyd{background-color:#274079}
 
 /*# sourceMappingURL=bundle.css.map */
