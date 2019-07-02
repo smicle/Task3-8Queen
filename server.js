@@ -1,6 +1,7 @@
-var express = require('express'),
-  http = require('http'),
-  app = express()
-app.use(express.static(__dirname + '/public'))
-var port = process.env.PORT || 5000
-var server = http.createServer(app).ltisten(port)
+const express = require('express')
+const app = express()
+
+app.set('port', process.env.PORT || 5000)
+app.use(express.static(`${__dirname}/public`))
+
+app.listen(app.get('port'), _ => console.log('Node app is running at localhost:' + app.get('port')))
