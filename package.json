@@ -15,7 +15,6 @@
     "typescript": "^3.4.5"
   },
   "scripts": {
-    "build": "node server.js",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
