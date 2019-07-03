@@ -15,6 +15,7 @@
     "typescript": "^3.4.5"
   },
   "scripts": {
+    "create": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",

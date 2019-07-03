@@ -17,6 +17,5 @@
     "noFallthroughCasesInSwitch": true,
     "allowJs": true,
     "watch": true,
-    // "sourceMap": true
   }
 }
